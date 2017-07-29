@@ -18,4 +18,4 @@ cdef unsigned binom_rnd_f(double N, double p)
 cdef unsigned approx_binom_rnd(unsigned n, double p)
 cdef unsigned approx_binom_rnd_f(double n, double p)
 cdef unsigned long long genrand64()
-
+cdef int choose(unsigned modulo)

@@ -68,6 +68,10 @@ cdef unsigned long long genrand64():
 
     return x
 
+cdef int choose(unsigned modulo):
+    return int(genrand64() % modulo)
+
+
 def py_rand_int():
     return genrand64()
 
