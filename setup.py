@@ -24,6 +24,8 @@ setup(
     name = modulename,
     packages = [modulename],
     package_dir = {modulename : '.'},
+    package_data = {modulename: ['random.pxd', 'lib.pxd']},
     ext_modules = cythonize(extensions)
+
 )
 
